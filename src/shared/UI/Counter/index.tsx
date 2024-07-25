@@ -1,7 +1,9 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { AppDispatch, AppState } from '@app/model/store';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { decrement, increment, incrementByAmount } from '../model/reducer';
+import { AppDispatch, AppState } from '@shared/consts/store';
+
+import { decrement, increment, incrementByAmount } from '../../model/reducer';
 
 export default function Counter() {
   const count = useSelector((state: AppState) => state.counter.count);

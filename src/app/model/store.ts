@@ -3,14 +3,10 @@ import { createWrapper } from 'next-redux-wrapper';
 
 import rootReducer from './slices';
 
-const makeStore = () =>
+export const makeStore = () =>
   configureStore({
     reducer: rootReducer,
     devTools: process.env.NODE_ENV !== 'production',
   });
-
-export type AppStore = ReturnType<typeof makeStore>;
-export type AppState = ReturnType<AppStore['getState']>;
-export type AppDispatch = AppStore['dispatch'];
 
 export const storeWrapper = createWrapper(makeStore);
