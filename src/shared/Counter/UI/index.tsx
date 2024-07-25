@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { AppDispatch, RootState } from '@app/model/store';
+import { AppDispatch, AppState } from '@app/model/store';
 
 import { decrement, increment, incrementByAmount } from '../model/reducer';
 
 export default function Counter() {
-  const count = useSelector((state: RootState) => state.counter.value);
+  const count = useSelector((state: AppState) => state.counter.count);
   const dispatch = useDispatch<AppDispatch>();
 
   return (

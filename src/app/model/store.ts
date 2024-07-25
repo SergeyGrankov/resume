@@ -1,13 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterSlice from '@shared/Counter/model/reducer';
+import { createWrapper } from 'next-redux-wrapper';
 
-const store = configureStore({
-  reducer: {
-    counter: counterSlice.reducer,
-  },
-});
+import rootReducer from './slices';
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+const makeStore = () =>
+  configureStore({
+    reducer: rootReducer,
+    devTools: process.env.NODE_ENV !== 'production',
+  });
 
-export default store;
+export type AppStore = ReturnType<typeof makeStore>;
+export type AppState = ReturnType<AppStore['getState']>;
+export type AppDispatch = AppStore['dispatch'];
+
+export const storeWrapper = createWrapper(makeStore);
