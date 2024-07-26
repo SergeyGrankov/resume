@@ -46,18 +46,32 @@
     "indent": ["error", 2],
     "react/jsx-indent": ["error", 2],
 
+    // https://github.com/lydell/eslint-plugin-simple-import-sort#sort-order
     "simple-import-sort/imports": [
       "error",
       {
         "groups": [
           // Импорты реакт-пакетов и пакетов из node_modules
-          ["^react", "^@?\\w"],
+          ["^react", "^\\u0000", "^next", "^@?\\w"],
 
           // Импорты компонентов непосредственно из самого проекта
-          ["^@shared", "^@widgets", "^@app", "^@pages", "^@"],
+          [
+            "^@/shared/",
+            "^@/widgets/",
+            "^@/app/",
+            "^@/pages/",
+            "^next/head",
+            "^next/image"
+          ],
 
           // Импорты функций и прочих хелперов
           ["^\\.\\./"],
+
+          // Импорт из текущего модуля
+          ["^\\."],
+
+          // Прочие импорты
+          ["^"],
 
           // Импорты стилей, картинок и прочих ресурсов
           ["^.+\\.?(css|scss|png|jpg|jpeg|gif|svg|ico|webp)$"]

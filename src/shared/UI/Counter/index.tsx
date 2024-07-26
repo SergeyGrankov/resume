@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { AppDispatch, AppState } from '@shared/consts/store';
+import { AppDispatch, AppState } from '@/shared/consts/store';
 
 import { decrement, increment, incrementByAmount } from '../../model/reducer';
 

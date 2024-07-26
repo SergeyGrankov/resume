@@ -1,4 +1,4 @@
-import { makeStore } from '@app/model/store';
+import { makeStore } from '@/app/model/store';
 
 export type AppStore = ReturnType<typeof makeStore>;
 export type AppState = ReturnType<AppStore['getState']>;

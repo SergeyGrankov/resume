@@ -12,9 +12,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    // Если будут меняться пути, то надо менять moduleNameMapper в jest
     "paths": {
-      "@*": ["./src/*"],
-      "#*": ["./src/app/styles/*"]
+      "@/*": ["./src/*"],
+      "#/*": ["./src/app/styles/*"]
     },
     "plugins": [
       {
