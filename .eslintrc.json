@@ -38,13 +38,17 @@
     "no-trailing-spaces": 2,
     "no-multiple-empty-lines": 2,
 
-    "no-ternary": 1,
+    "semi": 1,
     "camelcase": 1,
     "eqeqeq": 1,
 
     "quotes": ["error", "single"],
     "indent": ["error", 2],
     "react/jsx-indent": ["error", 2],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
 
     // https://github.com/lydell/eslint-plugin-simple-import-sort#sort-order
     "simple-import-sort/imports": [
