@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { AppDispatch, AppState } from '@/shared/consts/store';
 
-import { decrement, increment, incrementByAmount } from '../../model/reducer';
+import { decrement, increment, incrementByAmount } from './model/reducer';
 
 export default function Counter() {
   const count = useSelector((state: AppState) => state.counter.count);

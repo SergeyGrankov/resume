@@ -5,6 +5,8 @@ import { Roboto } from 'next/font/google';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { AppCacheProvider } from '@mui/material-nextjs/v13-pagesRouter';
 
+import Layout from '@/widgets/Layout/UI';
+
 import { storeWrapper } from './model/store';
 
 import '#/global.scss';
@@ -16,6 +18,11 @@ const roboto = Roboto({
 });
 
 const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#8276eb', // основной цвет
+    },
+  },
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
@@ -30,7 +37,9 @@ export default function App({ Component, ...rest }: AppProps) {
       <AppCacheProvider {...pageProps}>
         <ThemeProvider theme={theme}>
           <main className={roboto.className}>
-            <Component {...pageProps} />
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
           </main>
         </ThemeProvider>
       </AppCacheProvider>

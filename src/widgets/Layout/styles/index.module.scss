@@ -1,0 +1,12 @@
+@import '#/colors.scss';
+
+.tabs {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $space-gray;
+}
+
+.tab {
+  color: $white;
+}

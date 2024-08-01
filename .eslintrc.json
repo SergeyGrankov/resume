@@ -18,7 +18,6 @@
     "no-class-assign": 2,
     "no-compare-neg-zero": 2,
     "no-empty": 2,
-    "no-extra-parens": 2,
     "no-extra-semi": 2,
     "valid-jsdoc": 2,
     "use-isnan": 2,
