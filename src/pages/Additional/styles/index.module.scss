@@ -8,7 +8,7 @@
 
 .testLine {
   height: 2px;
-  background-color: $orange;
+  background-color: $space-gray;
   margin: 10px 0;
 
   @include media(desktop) {

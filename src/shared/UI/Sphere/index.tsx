@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
 import { TagSphere } from 'react-tag-sphere';
 
+import Fallback from '@/shared/UI/Fallback';
 import Image from 'next/image';
 
 interface IProps {
@@ -79,19 +81,21 @@ export default function Sphere({ className }: IProps) {
   ];
 
   return (
-    <TagSphere
-      tags={tags.map((i: ITags) => (
-        <Image
-          width={50}
-          height={50}
-          src={i['src']}
-          key={i['key']}
-          alt={i['key']}
-        />
-      ))}
-      initialSpeed={7}
-      radius={150}
-      className={className}
-    />
+    <ErrorBoundary FallbackComponent={Fallback}>
+      <TagSphere
+        tags={tags.map((i: ITags) => (
+          <Image
+            width={50}
+            height={50}
+            src={i['src']}
+            key={i['key']}
+            alt={i['key']}
+          />
+        ))}
+        initialSpeed={7}
+        radius={150}
+        className={className}
+      />
+    </ErrorBoundary>
   );
 }

@@ -31,7 +31,6 @@ export default function SkillsList() {
       <Header text="# Main skills" animationStyle="pulse" />
 
       <div className={styles.skills}>
-        {/* FIXME: сделать заглушку для сферы */}
         <Sphere className={styles.skillsSphere} />
 
         <div className={styles.tilesContainer}>
