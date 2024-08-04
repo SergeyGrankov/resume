@@ -1,3 +1,3 @@
-import Home from './UI';
+import AboutMe from './UI';
 
-export default Home;
+export default AboutMe;

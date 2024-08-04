@@ -2,11 +2,11 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import Home from '.';
+import Sphere from '.';
 
-describe('Home', () => {
-  it('renders the Home component', () => {
-    const { container } = render(<Home />);
+describe('Sphere', () => {
+  it('renders the Sphere component', () => {
+    const { container } = render(<Sphere />);
 
     expect(container.firstChild).not.toBeNull();
   });

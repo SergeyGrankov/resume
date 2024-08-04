@@ -2,11 +2,11 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import Home from '.';
+import SkillsList from '.';
 
-describe('Home', () => {
-  it('renders the Home component', () => {
-    const { container } = render(<Home />);
+describe('SkillsList', () => {
+  it('renders the SkillsList component', () => {
+    const { container } = render(<SkillsList />);
 
     expect(container.firstChild).not.toBeNull();
   });
