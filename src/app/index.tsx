@@ -37,9 +37,8 @@ export default function App({ Component, ...rest }: AppProps) {
       <AppCacheProvider {...pageProps}>
         <ThemeProvider theme={theme}>
           <main className={roboto.className}>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
+            <Layout />
+            <Component {...pageProps} />
           </main>
         </ThemeProvider>
       </AppCacheProvider>

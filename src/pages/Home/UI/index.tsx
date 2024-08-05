@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ScrollToTop from '@/shared/UI/ScrollToTop';
 import StarsBackground from '@/shared/UI/StarsBackground';
 import SecondarySkillsList from '@/widgets/SecondarySkillsList/UI';
 import SkillsList from '@/widgets/SkillsList/UI';
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
 
       <StarsBackground />
+      <ScrollToTop />
 
       <SkillsList />
       <SecondarySkillsList />

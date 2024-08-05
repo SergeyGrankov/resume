@@ -30,11 +30,7 @@ beforeEach(() => {
 
 describe('Layout', () => {
   it('renders the Layout component', () => {
-    const { container } = render(
-      <Layout>
-        <div />
-      </Layout>
-    );
+    const { container } = render(<Layout />);
 
     expect(container.firstChild).not.toBeNull();
   });

@@ -4,12 +4,12 @@
   &:after {
     position: absolute;
     content: '';
-    top: 44%;
-    left: -14%;
+    top: 36%;
+    left: -22%;
     right: 0;
     z-index: -1;
     height: 74%;
-    width: 124%;
+    width: 144%;
     margin: 0 auto;
     transform: scale($size);
     -webkit-filter: blur($spread);
@@ -36,7 +36,7 @@
 
 .tile {
   position: relative;
-  padding: 16px;
+  padding: 8px;
   text-align: center;
   font-size: 16px;
   line-height: 32px;

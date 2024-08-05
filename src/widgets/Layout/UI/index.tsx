@@ -1,16 +1,16 @@
-import React, { ReactNode, useEffect } from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import { NextRouter, useRouter } from 'next/router';
-import { Tab, Tabs } from '@mui/material';
+import { Tab, Tabs, Typography } from '@mui/material';
 
 import { Routes } from '@/shared/consts/pages';
+import Image from 'next/image';
 
 import styles from '../styles/index.module.scss';
+import myPhoto from '../styles/me.webp';
 
-interface IProps {
-  children: ReactNode;
-}
-
-export default function Layout({ children }: IProps) {
+export default function Layout() {
   const [value, setValue] = React.useState(0);
   const { push, pathname }: NextRouter = useRouter();
 
@@ -25,7 +25,17 @@ export default function Layout({ children }: IProps) {
   }, [pathname]);
 
   return (
-    <>
+    <div className={styles.container}>
+      <Typography
+        className={styles.typography}
+        variant="h5"
+        noWrap
+        component="a"
+        href="#app-bar-with-responsive-menu"
+      >
+        SGN
+      </Typography>
+
       <Tabs
         className={styles.tabs}
         value={value}
@@ -45,7 +55,13 @@ export default function Layout({ children }: IProps) {
           onClick={() => push(Routes.Additional)}
         />
       </Tabs>
-      {children}
-    </>
+
+      <Image
+        className={styles.myPhoto}
+        src={myPhoto}
+        alt="My photo"
+        width={48}
+      />
+    </div>
   );
 }

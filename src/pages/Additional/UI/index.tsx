@@ -2,6 +2,7 @@ import React from 'react';
 
 import BoxContainer from '@/shared/UI/BoxContainer';
 import Counter from '@/shared/UI/Counter';
+import ScrollToTop from '@/shared/UI/ScrollToTop';
 import StarsBackground from '@/shared/UI/StarsBackground';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -18,6 +19,7 @@ export default function Additional() {
       </Head>
 
       <StarsBackground />
+      <ScrollToTop />
 
       <BoxContainer>
         <div>Hello, my name is Sergey!</div>
