@@ -1,6 +1,7 @@
 import React from 'react';
 
 import StarsBackground from '@/shared/UI/StarsBackground';
+import SecondarySkillsList from '@/widgets/SecondarySkillsList/UI';
 import SkillsList from '@/widgets/SkillsList/UI';
 import Head from 'next/head';
 
@@ -17,6 +18,7 @@ export default function Home() {
       <StarsBackground />
 
       <SkillsList />
+      <SecondarySkillsList />
     </div>
   );
 }

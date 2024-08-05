@@ -5,21 +5,17 @@ import Header from '@/shared/UI/Header';
 import Sphere from '@/shared/UI/Sphere';
 import Tile from '@/shared/UI/Tile';
 
-import { mainSkillsTags, skills } from '../consts/skills';
+import { skills } from '../consts/skills';
 
 import styles from '../styles/index.module.scss';
 
-export default function SkillsList() {
+export default function SecondarySkillsList() {
   return (
     <BoxContainer>
-      <Header text="# Main skills" animationStyle="pulse" />
+      <Header text="# Secondary skills" animationStyle="pulse" />
 
       <div className={styles.skills}>
-        <Sphere
-          radius={140}
-          tags={mainSkillsTags}
-          className={styles.skillsSphere}
-        />
+        <Sphere radius={108} tags={skills} className={styles.skillsSphere} />
 
         <div className={styles.tilesContainer}>
           {skills.map((itemText, index) => {
