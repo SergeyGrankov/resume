@@ -17,8 +17,8 @@ export default function ParticlesBlock() {
     <div className={styles.container}>
       <Particles id="tsparticles" init={particlesInit} options={options} />
       <span className={styles.text}>
-        <p>Sergey Grankov</p>
-        <p>Frontend developer</p>
+        <p>SERGEY GRANKOV</p>
+        <p>FRONTEND DEVELOPER</p>
       </span>
     </div>
   );
