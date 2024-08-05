@@ -2,6 +2,7 @@ import React from 'react';
 
 import ScrollToTop from '@/shared/UI/ScrollToTop';
 import StarsBackground from '@/shared/UI/StarsBackground';
+import ParticlesBlock from '@/widgets/Particles/UI';
 import SecondarySkillsList from '@/widgets/SecondarySkillsList/UI';
 import SkillsList from '@/widgets/SkillsList/UI';
 import Head from 'next/head';
@@ -19,6 +20,7 @@ export default function Home() {
       <StarsBackground />
       <ScrollToTop />
 
+      <ParticlesBlock />
       <SkillsList />
       <SecondarySkillsList />
     </div>

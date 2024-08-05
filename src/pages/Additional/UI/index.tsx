@@ -21,7 +21,7 @@ export default function Additional() {
       <StarsBackground />
       <ScrollToTop />
 
-      <BoxContainer>
+      <BoxContainer initialInView>
         <div>Hello, my name is Sergey!</div>
 
         <Image src={leman} alt="Фото Апофеоз Геркулеса2" width={500} />

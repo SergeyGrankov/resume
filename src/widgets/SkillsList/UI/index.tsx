@@ -11,7 +11,7 @@ import styles from '../styles/index.module.scss';
 
 export default function SkillsList() {
   return (
-    <BoxContainer>
+    <BoxContainer initialInView>
       <Header text="# Main skills" animationStyle="pulse" />
 
       <div className={styles.skills}>

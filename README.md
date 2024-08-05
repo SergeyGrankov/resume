@@ -1,3 +1,9 @@
+# ДЛЯ ЧИТАЮЩЕГО ГОСТЯ!
+Привет! Спасибо, что решили ознакомиться с моим проектом, я надеюсь, что вам он очень понравится. Я создавал его ради того, чтобы показать на что я способен (точнее маленькую часть из всего). В будущем я планирую расширять проект и добавлять сюда больше функционала для того, чтобы мои будущие коллеги увидели то, что они хотели увидеть. Этот проект может быть местами не идеален, однако я стараюсь делать всё, что в моих силах. Have a nice day. <3
+
+# FOR VISITORS!
+Hello! Thank you for taking the time to check out my project. I hope you really like it. I created it to showcase what I am capable of (or at least a small part of it). In the future, I plan to expand the project and add more features so that my future colleagues can see what they are looking for. This project might not be perfect in some places, but I am doing my best. Have a nice day. <3
+
 # Важное
 1) Папка app в корне этого проекта нужна для поддержания архитектуры проекта feature slice design!
 2) Папка public предназначена исключительно для мета-иконок. Связано с тем, что в Next js нельзя настроить их хранение в своих модулях, как картинки! Можно использовать нативные методы для загрузки этих иконок, но мне такой подход в реакте не нравится.

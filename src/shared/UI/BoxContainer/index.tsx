@@ -9,13 +9,19 @@ import styles from './styles/index.module.scss';
 
 interface IProps {
   children: ReactNode;
+  initialInView?: boolean;
   className?: string;
 }
 
-export default function BoxContainer({ children, className }: IProps) {
+export default function BoxContainer({
+  initialInView = false,
+  children,
+  className,
+}: IProps) {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.1,
+    initialInView,
   });
 
   const cn = classNames(styles.container, className, {
