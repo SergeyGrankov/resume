@@ -1,0 +1,12 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.errorText {
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,62 @@
+@import '#/colors.scss';
+
+@mixin backlight($spread, $size, $colorA, $colorB, $duration) {
+  &:after {
+    position: absolute;
+    content: '';
+    top: 36%;
+    left: -22%;
+    right: 0;
+    z-index: -1;
+    height: 74%;
+    width: 144%;
+    margin: 0 auto;
+    transform: scale($size);
+    -webkit-filter: blur($spread);
+    -moz-filter: blur($spread);
+    -ms-filter: blur($spread);
+    filter: blur($spread);
+    background: linear-gradient(270deg, $colorA, $colorB);
+    background-size: 200% 200%;
+    animation: animateGlow $duration ease infinite;
+
+    @keyframes animateGlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+}
+
+.tile {
+  position: relative;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  color: #252b37;
+  background-color: #151823;
+  animation: textColor 10s ease infinite;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  @include backlight(22px, 0.62, #0fffc1, $main, 10s);
+
+  @keyframes textColor {
+    0% {
+      color: $main;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: $main;
+    }
+  }
+}

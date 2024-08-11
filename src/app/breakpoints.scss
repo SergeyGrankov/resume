@@ -1,0 +1,16 @@
+$breakpoint-bigMobile: 440px;
+$breakpoint-desktop: 1024px;
+
+@mixin media($breakpoint) {
+  @if $breakpoint == bigMobile {
+    @media (min-width: $breakpoint-bigMobile) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}

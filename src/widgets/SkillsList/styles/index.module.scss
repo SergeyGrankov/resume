@@ -1,0 +1,34 @@
+@import '#/colors.scss';
+@import '#/breakpoints.scss';
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 12px;
+
+  @include media(desktop) {
+    margin-top: 24px;
+    flex-direction: row;
+  }
+}
+
+.skillsSphere {
+  margin: 24px 80px;
+}
+
+.tilesContainer {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 24px;
+
+  @include media(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: unset;
+  }
+}

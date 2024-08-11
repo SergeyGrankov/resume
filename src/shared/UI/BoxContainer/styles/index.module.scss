@@ -1,0 +1,33 @@
+@import '#/colors.scss';
+@import '#/breakpoints.scss';
+
+.container {
+  position: relative;
+  top: 340px;
+  margin: 24px 24px;
+  z-index: 1;
+  border: 1px solid $space-gray;
+  border-radius: 8px;
+  padding: 34px;
+  backdrop-filter: blur(4px);
+  justify-content: space-between;
+  box-shadow: 0 4px 12px $main;
+  opacity: 0;
+  transition:
+    box-shadow 0.4s ease-in-out,
+    opacity 2s ease-in-out,
+    top 1.2s ease-in-out;
+
+  @include media(desktop) {
+    margin: 24px 36px;
+  }
+}
+
+.inView {
+  opacity: 1;
+  top: 0;
+}
+
+.container:hover {
+  box-shadow: 0 4px 24px $main;
+}
