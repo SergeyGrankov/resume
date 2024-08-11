@@ -7,7 +7,7 @@ import styles from './page.module.scss';
 
 export const metadata: Metadata = {
   title: 'Additional Info',
-  description: 'Resume of Sergey Grankov',
+  description: 'Summary of Sergey Grankov',
 };
 
 export default function Additional() {
