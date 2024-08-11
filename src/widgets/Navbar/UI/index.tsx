@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { Tab, Tabs, Typography } from '@mui/material';
 
-import { Routes } from '@/shared/consts/pages';
+import { Routes } from '@/shared/consts/routes';
 import Image from 'next/image';
 
 import styles from '../styles/index.module.scss';
@@ -37,6 +37,7 @@ export default function Navbar() {
           letterSpacing: '0.3rem',
           color: 'inherit',
           textDecoration: 'none',
+          marginRight: '4px',
         }}
         variant="h5"
         noWrap

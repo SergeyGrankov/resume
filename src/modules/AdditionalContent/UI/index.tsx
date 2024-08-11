@@ -1,7 +1,6 @@
 import React from 'react';
 
 import BoxContainer from '@/shared/UI/BoxContainer';
-import Counter from '@/shared/UI/Counter';
 import ScrollToTop from '@/shared/UI/ScrollToTop';
 import StarsBackground from '@/shared/UI/StarsBackground';
 import Image from 'next/image';
@@ -24,8 +23,6 @@ export default function AdditionalContent() {
           height={300}
         />
         <div className={styles.testLine} />
-
-        <Counter />
       </BoxContainer>
     </>
   );

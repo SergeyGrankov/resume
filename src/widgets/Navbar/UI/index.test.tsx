@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { usePathname, useRouter } from 'next/navigation';
 import { render } from '@testing-library/react';
 
-import { Routes } from '@/shared/consts/pages';
+import { Routes } from '@/shared/consts/routes';
 
 import Layout from '.';
 
