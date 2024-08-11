@@ -12,7 +12,7 @@ import styles from '../styles/index.module.scss';
 export default function SkillsList() {
   return (
     <BoxContainer initialInView>
-      <Header text="# Main skills" animationStyle="pulse" />
+      <Header text="# Main skills" animationStyle="raise" />
 
       <div className={styles.skills}>
         <Sphere

@@ -31,7 +31,7 @@ export default function Sphere({ radius, tags, className }: IProps) {
             />
           )
         )}
-        initialSpeed={6}
+        initialSpeed={4}
         maxSpeed={15}
         radius={radius}
         className={className}

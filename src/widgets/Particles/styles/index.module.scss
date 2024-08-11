@@ -32,10 +32,6 @@
   animation:
     animated-firstLine 2s steps(14, end) 1s 1 normal both,
     animated-cursor-firstLine 3.2s steps(14, end) forwards;
-
-  @include media(desktop) {
-    font-size: 32px;
-  }
 }
 
 .secondLine {
@@ -59,10 +55,6 @@
   animation:
     animated-secondLine 2s steps(18, end) 3.2s 1 normal both,
     animated-cursor-secondLine 5.8s steps(18, end) forwards;
-
-  @include media(desktop) {
-    font-size: 32px;
-  }
 }
 
 @keyframes animated-firstLine {
