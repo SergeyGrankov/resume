@@ -46,14 +46,14 @@
   border-radius: 5px;
   cursor: pointer;
   white-space: nowrap;
-  @include backlight(22px, 0.62, #0fffc1, $main, 10s);
+  @include backlight(22px, 0.62, $candy, $main, 10s);
 
   @keyframes textColor {
     0% {
       color: $main;
     }
     50% {
-      color: #0fffc1;
+      color: $candy;
     }
     100% {
       color: $main;

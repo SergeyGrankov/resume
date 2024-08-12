@@ -12,7 +12,8 @@ const roboto = Roboto({
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#8276eb', // основной цвет
+      main: '#8276eb', // main цвет
+      dark: '#4d4d4d', // space-gray цвет
     },
   },
   typography: {

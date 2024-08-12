@@ -2,15 +2,16 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import Home from '.';
+import Component from '.';
 
 jest.mock('@/shared/UI/ScrollToTop');
-jest.mock('@/widgets/SkillsList/UI');
-jest.mock('@/widgets/SecondarySkillsList/UI');
+jest.mock('@/widgets/SkillsList');
+jest.mock('@/widgets/SecondarySkillsList');
+jest.mock('@/widgets/Anchorbar');
 
-describe('Home', () => {
-  it('renders the Home component', () => {
-    const { container } = render(<Home />);
+describe('HomeContent', () => {
+  it('renders the HomeContent component', () => {
+    const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();
   });

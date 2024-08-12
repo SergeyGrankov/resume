@@ -12,7 +12,11 @@ import styles from '../styles/index.module.scss';
 export default function SecondarySkillsList() {
   return (
     <BoxContainer>
-      <Header text="# Secondary skills" animationStyle="raise" />
+      <Header
+        id="secondarySkills"
+        text="Secondary skills #"
+        animationStyle="raise"
+      />
 
       <div className={styles.skills}>
         <Sphere radius={108} tags={skills} className={styles.skillsSphere} />

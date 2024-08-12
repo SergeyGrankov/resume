@@ -2,11 +2,13 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import Header from '.';
+import Component from '.';
 
 describe('Header', () => {
   it('renders the Header component', () => {
-    const { container } = render(<Header text="some" animationStyle="pulse" />);
+    const { container } = render(
+      <Component id="mainSkills" text="some" animationStyle="pulse" />
+    );
 
     expect(container.firstChild).not.toBeNull();
   });

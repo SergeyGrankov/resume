@@ -1,8 +1,9 @@
 import React from 'react';
 
-import ParticlesBlock from '@/widgets/Particles/UI';
-import SecondarySkillsList from '@/widgets/SecondarySkillsList/UI';
-import SkillsList from '@/widgets/SkillsList/UI';
+import Anchorbar from '@/widgets/Anchorbar';
+import ParticlesBlock from '@/widgets/ParticlesBlock';
+import SecondarySkillsList from '@/widgets/SecondarySkillsList';
+import SkillsList from '@/widgets/SkillsList';
 import ScrollToTop from '@/shared/UI/ScrollToTop';
 import StarsBackground from '@/shared/UI/StarsBackground';
 
@@ -13,6 +14,7 @@ export default function HomeContent() {
       <ScrollToTop />
 
       <ParticlesBlock />
+      <Anchorbar />
       <SkillsList />
       <SecondarySkillsList />
     </>

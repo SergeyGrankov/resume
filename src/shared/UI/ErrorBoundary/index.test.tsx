@@ -3,7 +3,7 @@ import { FallbackProps } from 'react-error-boundary';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 
-import ErrorBoundary from '.';
+import Component from '.';
 
 beforeAll(() => {
   // Необходимо, т.к. в консоль тестирования сыпется варнинг о том, что в компоненте ошибка
@@ -25,9 +25,9 @@ const FallbackComponent: React.FC<FallbackProps> = () => (
 describe('ErrorBoundary', () => {
   it('renders child component without error', () => {
     render(
-      <ErrorBoundary fallbackComponent={FallbackComponent}>
+      <Component fallbackComponent={FallbackComponent}>
         <div>Test Child</div>
-      </ErrorBoundary>
+      </Component>
     );
 
     expect(screen.queryByText('Test Child')).toBeInTheDocument();
@@ -35,9 +35,9 @@ describe('ErrorBoundary', () => {
 
   it('renders fallback component when error is thrown', () => {
     render(
-      <ErrorBoundary fallbackComponent={FallbackComponent}>
+      <Component fallbackComponent={FallbackComponent}>
         <ProblemChild />
-      </ErrorBoundary>
+      </Component>
     );
 
     expect(screen.queryByText('Something went wrong.')).toBeInTheDocument();

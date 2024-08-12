@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { Tab, Tabs, Typography } from '@mui/material';
 
@@ -10,18 +10,9 @@ import Image from 'next/image';
 import styles from '../styles/index.module.scss';
 
 export default function Navbar() {
-  const [value, setValue] = useState(0);
   const { push } = useRouter();
   const pathname = usePathname();
-
-  const handleChange = (event: React.SyntheticEvent, newValue: number) =>
-    setValue(newValue);
-
-  useEffect(() => {
-    const curPage = pathname === Routes.Home ? 0 : 1;
-
-    setValue(curPage);
-  }, [pathname]);
+  const curPage = pathname === Routes.Home ? 0 : 1;
 
   return (
     <div className={styles.container}>
@@ -42,18 +33,12 @@ export default function Navbar() {
         variant="h5"
         noWrap
         component="a"
-        href="#app-bar-with-responsive-menu"
+        href={Routes.Home}
       >
         SGN
       </Typography>
 
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        aria-label="nav tabs"
-        role="navigation"
-        centered
-      >
+      <Tabs value={curPage} aria-label="nav tabs" role="navigation" centered>
         <Tab
           sx={{
             color: '#e2e3e7',

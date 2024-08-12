@@ -2,11 +2,11 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import StarsBackground from '.';
+import Component from '.';
 
 describe('StarsBackground', () => {
   it('renders the StarsBackground component', () => {
-    const { container } = render(<StarsBackground />);
+    const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();
   });

@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 
-import BoxContainer from '.';
+import Component from '.';
 
 import styles from './styles/index.module.scss';
 
@@ -20,9 +20,9 @@ describe('BoxContainer', () => {
     }));
 
     const { container } = render(
-      <BoxContainer>
+      <Component>
         <div />
-      </BoxContainer>
+      </Component>
     );
 
     expect(container.firstChild).not.toBeNull();
@@ -35,9 +35,9 @@ describe('BoxContainer', () => {
     }));
 
     render(
-      <BoxContainer>
+      <Component>
         <div>Test Content</div>
-      </BoxContainer>
+      </Component>
     );
 
     const box = screen.getByText('Test Content').parentElement;

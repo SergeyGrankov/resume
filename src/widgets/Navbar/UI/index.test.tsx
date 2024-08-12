@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 
 import { Routes } from '@/shared/consts/routes';
 
-import Layout from '.';
+import Component from '.';
 
 const mockedUseRouter = useRouter as jest.Mock;
 const mockedUsePathname = usePathname as jest.Mock;
@@ -32,9 +32,9 @@ beforeEach(() => {
   mockedUsePathname.mockImplementation(() => Routes.Home);
 });
 
-describe('Layout', () => {
-  it('renders the Layout component', () => {
-    const { container } = render(<Layout />);
+describe('Navbar', () => {
+  it('renders the Navbar component', () => {
+    const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();
   });

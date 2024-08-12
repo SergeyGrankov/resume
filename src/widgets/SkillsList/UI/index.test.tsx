@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import SkillsList from '.';
+import Component from '.';
 
 jest.mock('react-intersection-observer', () => ({
   useInView: jest.fn(),
@@ -17,7 +17,7 @@ describe('SkillsList', () => {
       inView: true,
     }));
 
-    const { container } = render(<SkillsList />);
+    const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();
   });

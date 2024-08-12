@@ -1,4 +1,3 @@
-// TODO: объединить 3 файла глобала в 1
 @import 'colors';
 
 /**
@@ -27,6 +26,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
 /* Sections
