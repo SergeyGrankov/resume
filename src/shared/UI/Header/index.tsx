@@ -7,10 +7,16 @@ interface IProps {
   text: string;
   id: string;
   animationStyle: 'pulse' | 'raise';
+  className?: string;
 }
 
-export default function Header({ text, id, animationStyle }: IProps) {
-  const cn = classNames(styles.header, styles[animationStyle]);
+export default function Header({
+  text,
+  id,
+  animationStyle,
+  className,
+}: IProps) {
+  const cn = classNames(styles.header, styles[animationStyle], className);
 
   return (
     <h1 id={id} className={cn}>

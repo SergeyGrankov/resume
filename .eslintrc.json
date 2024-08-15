@@ -50,6 +50,7 @@
     "quotes": ["error", "single"],
     "indent": ["error", 2],
     "react/jsx-indent": ["error", 2],
+    "react/display-name": "off",
     "padding-line-between-statements": [
       "error",
       { "blankLine": "always", "prev": "*", "next": "return" }

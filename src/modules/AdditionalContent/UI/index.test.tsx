@@ -4,8 +4,8 @@ import { render } from '@testing-library/react';
 
 import Component from '.';
 
-jest.mock('@/shared/UI/BoxContainer');
-jest.mock('@/shared/UI/ScrollToTop');
+jest.mock('@/shared/UI/BoxContainer', () => () => <div />);
+jest.mock('@/shared/UI/ScrollToTop', () => () => <div />);
 
 describe('AdditionalContent', () => {
   it('renders the AdditionalContent component', () => {

@@ -2,12 +2,10 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
-import Component from './page';
+import Component from './About';
 
-jest.mock('@/modules/AdditionalContent');
-
-describe('Additional', () => {
-  it('renders the Additional component', () => {
+describe('About', () => {
+  it('renders the About component', () => {
     const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();

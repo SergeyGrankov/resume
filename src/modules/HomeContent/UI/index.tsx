@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AboutInfo from '@/widgets/AboutInfo';
 import Anchorbar from '@/widgets/Anchorbar';
 import ParticlesBlock from '@/widgets/ParticlesBlock';
 import SecondarySkillsList from '@/widgets/SecondarySkillsList';
@@ -15,6 +16,7 @@ export default function HomeContent() {
 
       <ParticlesBlock />
       <Anchorbar />
+      <AboutInfo />
       <SkillsList />
       <SecondarySkillsList />
     </>

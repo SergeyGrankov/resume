@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
 import Component from '.';
 
-jest.mock('react-intersection-observer', () => ({
-  useInView: jest.fn(),
-}));
+interface IProps {
+  children: ReactNode;
+}
 
-const { useInView } = require('react-intersection-observer');
+jest.mock('@/shared/UI/Header', () => () => <div />);
+jest.mock('@/shared/UI/Sphere', () => () => <div />);
+jest.mock('@/shared/UI/Tile', () => () => <div />);
+jest.mock('@/shared/UI/BoxContainer', () => {
+  return function BoxContainer({ children }: IProps) {
+    return <div>{children}</div>;
+  };
+});
 
 describe('SkillsList', () => {
   it('renders the SkillsList component', () => {
-    useInView.mockImplementation(() => ({
-      ref: jest.fn(),
-      inView: true,
-    }));
-
     const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();

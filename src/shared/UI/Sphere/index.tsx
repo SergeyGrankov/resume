@@ -1,12 +1,11 @@
-'use client';
-
 import React from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
-import { TagSphere } from 'react-tag-sphere';
 
 import { ITag, ITags } from '@/shared/consts/skills';
 import Fallback from '@/shared/UI/Fallback';
 import Image from 'next/image';
+
+import TagSphere from './TagSphere';
 
 interface IProps {
   className?: string;

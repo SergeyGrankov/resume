@@ -4,7 +4,7 @@ import React from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { Tab, Tabs, Typography } from '@mui/material';
 
-import { Routes } from '@/shared/consts/routes';
+import { routes } from '@/shared/consts/routes';
 import Image from 'next/image';
 
 import styles from '../styles/index.module.scss';
@@ -12,7 +12,7 @@ import styles from '../styles/index.module.scss';
 export default function Navbar() {
   const { push } = useRouter();
   const pathname = usePathname();
-  const curPage = pathname === Routes.Home ? 0 : 1;
+  const curPage = pathname === routes.HOME ? 0 : 1;
 
   return (
     <div className={styles.container}>
@@ -20,8 +20,7 @@ export default function Navbar() {
         sx={{
           display: 'flex',
           fontSize: {
-            xs: 12,
-            sm: 14,
+            xs: 14,
             lg: 26,
           },
           fontWeight: 700,
@@ -33,7 +32,7 @@ export default function Navbar() {
         variant="h5"
         noWrap
         component="a"
-        href={Routes.Home}
+        href={routes.HOME}
       >
         SGN
       </Typography>
@@ -43,25 +42,23 @@ export default function Navbar() {
           sx={{
             color: '#e2e3e7',
             fontSize: {
-              xs: 12,
-              sm: 14,
+              xs: 14,
               lg: 18,
             },
           }}
           label="Home"
-          onClick={() => push(Routes.Home)}
+          onClick={() => push(routes.HOME)}
         />
         <Tab
           sx={{
             color: '#e2e3e7',
             fontSize: {
-              xs: 12,
-              sm: 14,
+              xs: 14,
               lg: 18,
             },
           }}
           label="Additional info"
-          onClick={() => push(Routes.Additional)}
+          onClick={() => push(routes.ADDITTIONAL)}
         />
       </Tabs>
 

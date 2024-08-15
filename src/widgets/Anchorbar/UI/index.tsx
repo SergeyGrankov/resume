@@ -22,8 +22,7 @@ export default function Anchorbar() {
             sx={{
               color: '#e2e3e7',
               fontSize: {
-                xs: 12,
-                sm: 14,
+                xs: 14,
                 lg: 18,
               },
             }}

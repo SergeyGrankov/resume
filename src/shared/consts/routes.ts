@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-export enum Routes {
-  Home = '/',
-  Additional = '/additional',
+export enum routes {
+  HOME = '/',
+  ADDITTIONAL = '/additional',
 }

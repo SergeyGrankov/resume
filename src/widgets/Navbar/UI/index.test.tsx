@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { usePathname, useRouter } from 'next/navigation';
 import { render } from '@testing-library/react';
 
-import { Routes } from '@/shared/consts/routes';
+import { routes } from '@/shared/consts/routes';
 
 import Component from '.';
 
@@ -29,7 +29,7 @@ beforeEach(() => {
     },
     isFallback: false,
   }));
-  mockedUsePathname.mockImplementation(() => Routes.Home);
+  mockedUsePathname.mockImplementation(() => routes.HOME);
 });
 
 describe('Navbar', () => {

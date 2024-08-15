@@ -4,10 +4,13 @@ import { render } from '@testing-library/react';
 
 import Component from '.';
 
-jest.mock('@/shared/UI/ScrollToTop');
-jest.mock('@/widgets/SkillsList');
-jest.mock('@/widgets/SecondarySkillsList');
-jest.mock('@/widgets/Anchorbar');
+jest.mock('@/shared/UI/ScrollToTop', () => () => <div />);
+jest.mock('@/shared/UI/StarsBackground', () => () => <div />);
+jest.mock('@/widgets/SkillsList', () => () => <div />);
+jest.mock('@/widgets/SecondarySkillsList', () => () => <div />);
+jest.mock('@/widgets/ParticlesBlock', () => () => <div />);
+jest.mock('@/widgets/Anchorbar', () => () => <div />);
+jest.mock('@/widgets/AboutInfo', () => () => <div />);
 
 describe('HomeContent', () => {
   it('renders the HomeContent component', () => {
