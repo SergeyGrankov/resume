@@ -10,7 +10,7 @@ import styles from '../styles/index.module.scss';
 
 export default function AboutInfo() {
   return (
-    <BoxContainer className={styles.container} initialInView>
+    <BoxContainer className={styles.container}>
       <div className={styles.aboutContainer}>
         <Header id="aboutMe" text="About me #" animationStyle="raise" />
 

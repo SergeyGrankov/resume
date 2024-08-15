@@ -36,10 +36,12 @@ html {
   * Remove the margin in all browsers.
 */
 body {
+  position: relative;
   margin: 0;
   background-color: $black;
   color: $white;
   overflow-x: hidden;
+  height: 3000px;
 }
 
 /**

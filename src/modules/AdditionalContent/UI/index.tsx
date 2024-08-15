@@ -13,7 +13,7 @@ export default function AdditionalContent() {
       <StarsBackground />
       <ScrollToTop />
 
-      <BoxContainer initialInView>
+      <BoxContainer>
         <div>Hello, my name is Sergey!</div>
 
         <Image

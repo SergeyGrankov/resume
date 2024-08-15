@@ -1,35 +1,30 @@
 'use client';
 
-import React, { ReactNode } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { ReactNode, useEffect } from 'react';
 import Box from '@mui/material/Box';
+import AOS from 'aos';
 import classNames from 'classnames';
 
+import 'aos/dist/aos.css';
 import styles from './styles/index.module.scss';
 
 interface IProps {
   children: ReactNode;
-  initialInView?: boolean;
   className?: string;
 }
 
-export default function BoxContainer({
-  initialInView = false,
-  children,
-  className,
-}: IProps) {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-    initialInView,
-  });
+export default function BoxContainer({ children, className }: IProps) {
+  const cn = classNames(styles.container, className);
 
-  const cn = classNames(styles.container, className, {
-    [styles.inView]: inView,
-  });
+  useEffect(() => {
+    AOS.init({
+      duration: 2800,
+      once: false,
+    });
+  }, []);
 
   return (
-    <Box ref={ref} className={cn}>
+    <Box data-aos="flip-right" className={cn}>
       {children}
     </Box>
   );
