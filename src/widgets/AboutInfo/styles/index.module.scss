@@ -1,22 +1,6 @@
-@import '#/colors.scss';
-@import '#/breakpoints.scss';
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 34px;
-
-  @include media(desktop) {
-    gap: 60px;
-    flex-direction: row;
-  }
-}
-
-.aboutContainer {
-  width: 100%;
-}
-
-.contactsContainer {
-  width: 100%;
+  gap: 24px;
 }

@@ -14,7 +14,7 @@ export default function SecondarySkillsList() {
     <BoxContainer>
       <Header
         id="secondarySkills"
-        text="Secondary skills #"
+        text="Secondary skills"
         animationStyle="raise"
       />
 

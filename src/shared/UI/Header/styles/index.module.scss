@@ -2,6 +2,7 @@
 @import '#/breakpoints.scss';
 
 .header {
+  width: fit-content;
   display: inline-block;
   font-size: 18px;
   font-weight: 600;
@@ -19,10 +20,14 @@
     color: $extra-white;
   }
 
-  @include media(desktop) {
+  @include media(small-laptop) {
     scroll-margin-top: 108px;
     font-size: 22px;
   }
+}
+
+.withoutBorder {
+  border-bottom: none;
 }
 
 .pulse:hover,

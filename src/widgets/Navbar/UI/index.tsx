@@ -21,7 +21,7 @@ export default function Navbar() {
           display: 'flex',
           fontSize: {
             xs: 14,
-            lg: 26,
+            md: 26,
           },
           fontWeight: 700,
           letterSpacing: '0.3rem',
@@ -43,7 +43,7 @@ export default function Navbar() {
             color: '#e2e3e7',
             fontSize: {
               xs: 14,
-              lg: 18,
+              md: 18,
             },
           }}
           label="Home"
@@ -54,7 +54,7 @@ export default function Navbar() {
             color: '#e2e3e7',
             fontSize: {
               xs: 14,
-              lg: 18,
+              md: 18,
             },
           }}
           label="Additional info"

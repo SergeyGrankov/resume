@@ -1,17 +1,15 @@
 'use client';
 
 import React from 'react';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import CallIcon from '@mui/icons-material/Call';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import MailIcon from '@mui/icons-material/Mail';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import Stack from '@mui/material/Stack';
 
-import { colors } from '@/shared/consts/colors';
+import Header from '@/shared/UI/Header';
 
-import styles from '../styles/contacts.module.scss';
+import styles from '../styles/index.module.scss';
 
 export default function Contacts() {
   const copyTextToClipboard = async (text: string) => {
@@ -23,21 +21,11 @@ export default function Contacts() {
   };
 
   return (
-    <Stack
-      direction="column"
-      divider={
-        <Divider
-          sx={{ backgroundColor: colors.SPACE_GRAY }}
-          orientation="horizontal"
-          variant="inset"
-          flexItem
-        />
-      }
-      spacing={2}
-      sx={{ marginTop: '24px' }}
-    >
+    <div className={styles.container}>
+      <Header id="contacts" text="Get in touch:" withoutBorder />
+
       <div className={styles.info}>
-        <ContactPhoneIcon sx={{ marginRight: '8px' }} />
+        <CallIcon sx={{ marginRight: '8px' }} />
         Telephone:{' '}
         <a href="tel:+79859383263" className={styles.link}>
           8-985-938-32-63
@@ -65,6 +53,6 @@ export default function Contacts() {
           <ContentCopyIcon viewBox="-4 -4 32 32" />
         </IconButton>
       </div>
-    </Stack>
+    </div>
   );
 }

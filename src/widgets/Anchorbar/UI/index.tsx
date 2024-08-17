@@ -23,7 +23,7 @@ export default function Anchorbar() {
               color: '#e2e3e7',
               fontSize: {
                 xs: 14,
-                lg: 18,
+                md: 18,
               },
             }}
             label={anch.label}

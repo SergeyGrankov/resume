@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 import Component from '.';
 
 jest.mock('@/shared/UI/ScrollToTop', () => () => <div />);
-jest.mock('@/shared/UI/StarsBackground', () => () => <div />);
+jest.mock('@/shared/UI/Background', () => () => <div />);
 jest.mock('@/widgets/SkillsList', () => () => <div />);
 jest.mock('@/widgets/SecondarySkillsList', () => () => <div />);
 jest.mock('@/widgets/ParticlesBlock', () => () => <div />);

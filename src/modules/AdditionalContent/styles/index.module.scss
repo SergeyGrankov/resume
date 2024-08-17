@@ -6,7 +6,7 @@
   background-color: $space-gray;
   margin: 10px 0;
 
-  @include media(desktop) {
+  @include media(small-laptop) {
     background-color: $candy;
   }
 }

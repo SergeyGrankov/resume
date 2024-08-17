@@ -1,16 +1,12 @@
-@import '#/colors.scss';
 @import '#/breakpoints.scss';
 
 .container {
   position: relative;
   margin: 24px 24px;
-  padding: 34px;
-  backdrop-filter: blur(2px);
   border-radius: 18px;
-  box-shadow: 0 4px 12px #675adb9c;
   z-index: 1;
 
-  @include media(desktop) {
-    margin: 36px;
+  @include media(small-laptop) {
+    margin: 30px 46px;
   }
 }

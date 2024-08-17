@@ -1,9 +1,16 @@
 $breakpoint-bigMobile: 440px;
+$breakpoint-small-laptop: 800px;
 $breakpoint-desktop: 1024px;
 
 @mixin media($breakpoint) {
   @if $breakpoint == bigMobile {
     @media (min-width: $breakpoint-bigMobile) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-laptop {
+    @media (min-width: $breakpoint-small-laptop) {
       @content;
     }
   }

@@ -1,4 +1,40 @@
+@import '#/breakpoints.scss';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+  flex-direction: column;
+
+  @include media(desktop) {
+    gap: 54px;
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+.text {
+  align-self: start;
+  max-width: 100%;
+
+  @include media(desktop) {
+    max-width: 600px;
+  }
+}
+
 .info {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  white-space: nowrap;
+}
+
+.photo {
+  align-self: center;
+  border-radius: 8px;
+
+  @include media(desktop) {
+    align-self: start;
+    margin-top: 0;
+  }
 }

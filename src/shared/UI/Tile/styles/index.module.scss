@@ -44,7 +44,6 @@
   background-color: #151823;
   animation: textColor 10s ease infinite;
   border-radius: 5px;
-  cursor: pointer;
   white-space: nowrap;
   @include backlight(22px, 0.62, $candy, $main, 10s);
 

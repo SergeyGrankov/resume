@@ -37,11 +37,13 @@ html {
 */
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   background-color: $black;
   color: $white;
   overflow-x: hidden;
-  height: 3000px;
 }
 
 /**

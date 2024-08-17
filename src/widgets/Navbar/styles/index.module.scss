@@ -11,8 +11,8 @@
   border-bottom: 1px solid $space-gray;
   background-color: $black;
 
-  @include media(desktop) {
-    padding: 10px 36px;
+  @include media(small-laptop) {
+    padding: 10px 46px;
   }
 }
 

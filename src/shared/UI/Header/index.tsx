@@ -6,17 +6,21 @@ import styles from './styles/index.module.scss';
 interface IProps {
   text: string;
   id: string;
-  animationStyle: 'pulse' | 'raise';
+  withoutBorder?: boolean;
+  animationStyle?: 'pulse' | 'raise' | '';
   className?: string;
 }
 
 export default function Header({
   text,
   id,
-  animationStyle,
+  withoutBorder = false,
+  animationStyle = '',
   className,
 }: IProps) {
-  const cn = classNames(styles.header, styles[animationStyle], className);
+  const cn = classNames(styles.header, styles[animationStyle], className, {
+    [styles.withoutBorder]: withoutBorder,
+  });
 
   return (
     <h1 id={id} className={cn}>

@@ -1,8 +1,8 @@
 import React from 'react';
 
+import Background from '@/shared/UI/Background';
 import BoxContainer from '@/shared/UI/BoxContainer';
 import ScrollToTop from '@/shared/UI/ScrollToTop';
-import StarsBackground from '@/shared/UI/StarsBackground';
 import Image from 'next/image';
 
 import styles from '../styles/index.module.scss';
@@ -10,7 +10,7 @@ import styles from '../styles/index.module.scss';
 export default function AdditionalContent() {
   return (
     <>
-      <StarsBackground />
+      <Background />
       <ScrollToTop />
 
       <BoxContainer>

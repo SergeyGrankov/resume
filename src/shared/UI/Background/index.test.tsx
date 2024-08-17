@@ -4,8 +4,8 @@ import { render } from '@testing-library/react';
 
 import Component from '.';
 
-describe('StarsBackground', () => {
-  it('renders the StarsBackground component', () => {
+describe('Background', () => {
+  it('renders the Background component', () => {
     const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();
