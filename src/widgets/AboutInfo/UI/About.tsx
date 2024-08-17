@@ -7,23 +7,17 @@ import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 
 import { colors } from '@/shared/consts/colors';
+import TextGenerateEffect from '@/shared/UI/TextGenerateEffect';
 import Image from 'next/image';
+
+import { words } from '../consts/words';
 
 import styles from '../styles/about.module.scss';
 
-export default function AboutInfo() {
+export default function About() {
   return (
     <div className={styles.container}>
-      <div className={styles.text}>
-        I am a React Frontend developer with strong skills and knowledge for
-        working in a team. I write code independently (seeking advice from
-        colleagues when needed), I am hardworking, always striving for
-        improvement, ambitious, and have strong communication skills. I value
-        rational and well-grounded decision-making processes, and I absolutely
-        love web development. <br />
-        <br /> My experience is 2 years of commercial development, and before
-        that I was interested in studying my specialty for another 1 year.
-      </div>
+      <TextGenerateEffect className={styles.text} words={words} />
 
       <Stack
         direction="column"

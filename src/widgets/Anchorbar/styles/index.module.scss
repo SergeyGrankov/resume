@@ -4,8 +4,7 @@
 .container {
   display: flex;
   justify-content: center;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 2;
   border-bottom: 1px solid $space-gray;
   border-top: 1px solid $space-gray;

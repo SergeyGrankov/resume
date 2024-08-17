@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
 import Component from '.';
 
+interface IProps {
+  children: ReactNode;
+}
+
 jest.mock('@/shared/UI/ScrollToTop', () => () => <div />);
 jest.mock('@/shared/UI/Background', () => () => <div />);
+jest.mock('@/shared/UI/TracingBeam', () => ({ children }: IProps) => (
+  <div>{children}</div>
+));
 jest.mock('@/widgets/SkillsList', () => () => <div />);
 jest.mock('@/widgets/SecondarySkillsList', () => () => <div />);
 jest.mock('@/widgets/ParticlesBlock', () => () => <div />);

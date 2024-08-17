@@ -1,0 +1,15 @@
+@import '#/colors.scss';
+
+.word {
+  color: $extra-white;
+  opacity: 0;
+}
+
+.subContainer {
+  margin-top: 4px;
+}
+
+.words {
+  color: $extra-white;
+  letter-spacing: 0.025em;
+}

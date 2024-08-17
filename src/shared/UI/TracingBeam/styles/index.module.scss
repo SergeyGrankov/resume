@@ -1,0 +1,52 @@
+@import '#/breakpoints.scss';
+@import '#/colors.scss';
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 86vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding: 0 0 0 46px;
+
+  @include media(small-laptop) {
+    padding: 0;
+    max-width: 82vw;
+  }
+}
+
+.subContainer {
+  position: absolute;
+  left: -1rem;
+  top: 0.75rem;
+
+  @include media(small-laptop) {
+    left: -5rem;
+  }
+}
+
+.outerCircle {
+  margin-left: 27px;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: 1px solid #e4e4e7;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insideCircle {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #d4d4d8;
+  background-color: $extra-white;
+}
+
+.line {
+  margin-left: 1rem;
+  display: block;
+}

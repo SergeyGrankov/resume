@@ -7,6 +7,7 @@ import SecondarySkillsList from '@/widgets/SecondarySkillsList';
 import SkillsList from '@/widgets/SkillsList';
 import Background from '@/shared/UI/Background';
 import ScrollToTop from '@/shared/UI/ScrollToTop';
+import TracingBeam from '@/shared/UI/TracingBeam';
 
 export default function HomeContent() {
   return (
@@ -16,9 +17,12 @@ export default function HomeContent() {
 
       <ParticlesBlock />
       <Anchorbar />
-      <AboutInfo />
-      <SkillsList />
-      <SecondarySkillsList />
+
+      <TracingBeam>
+        <AboutInfo />
+        <SkillsList />
+        <SecondarySkillsList />
+      </TracingBeam>
     </>
   );
 }
