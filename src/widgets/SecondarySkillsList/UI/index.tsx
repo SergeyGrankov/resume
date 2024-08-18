@@ -2,10 +2,10 @@ import React from 'react';
 
 import BoxContainer from '@/shared/UI/BoxContainer';
 import Header from '@/shared/UI/Header';
-import Sphere from '@/shared/UI/Sphere';
-import Tile from '@/shared/UI/Tile';
 
-import { skills } from '../consts/skills';
+import { items } from '../consts/items';
+
+import Skill from './Skill';
 
 import styles from '../styles/index.module.scss';
 
@@ -13,19 +13,20 @@ export default function SecondarySkillsList() {
   return (
     <BoxContainer>
       <Header
-        id="secondarySkills"
+        id="#secondarySkills"
         text="Secondary skills"
         animationStyle="raise"
       />
 
-      <div className={styles.skills}>
-        <Sphere radius={108} tags={skills} className={styles.skillsSphere} />
-
-        <div className={styles.tilesContainer}>
-          {skills.map((itemText, index) => {
-            return <Tile text={itemText} key={index} />;
-          })}
-        </div>
+      <div className={styles.container}>
+        {items.map((item) => (
+          <Skill
+            title={item.title}
+            text={item.text}
+            duration={item.duration}
+            key={item.title}
+          />
+        ))}
       </div>
     </BoxContainer>
   );

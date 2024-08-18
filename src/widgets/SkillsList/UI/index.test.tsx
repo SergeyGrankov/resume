@@ -9,7 +9,7 @@ interface IProps {
 }
 
 jest.mock('@/shared/UI/Header', () => () => <div />);
-jest.mock('@/shared/UI/Sphere', () => () => <div />);
+jest.mock('./Sphere', () => () => <div />);
 jest.mock('@/shared/UI/Tile', () => () => <div />);
 jest.mock('@/shared/UI/BoxContainer', () => {
   return function BoxContainer({ children }: IProps) {

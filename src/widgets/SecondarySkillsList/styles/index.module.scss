@@ -1,36 +1,17 @@
-@import '#/colors.scss';
 @import '#/breakpoints.scss';
 
-.skills {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  margin-top: 12px;
-
-  @include media(desktop) {
-    margin-top: 24px;
-    flex-direction: row;
-  }
-}
-
-.skillsSphere {
-  margin: 24px 80px;
-}
-
-.tilesContainer {
+.container {
   display: grid;
+  grid-template-rows: repeat(4, 1fr);
   gap: 24px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  overflow: auto;
-  width: 100%;
-  padding: 0 20px 28px 0;
+  margin-top: 32px;
+
+  @include media(small-laptop) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 
   @include media(desktop) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    overflow-x: unset;
-    padding: 28px 0;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

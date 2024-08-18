@@ -17,7 +17,7 @@ import styles from '../styles/about.module.scss';
 export default function About() {
   return (
     <div className={styles.container}>
-      <TextGenerateEffect className={styles.text} words={words} />
+      <TextGenerateEffect className={styles.text} words={words} isDark />
 
       <Stack
         direction="column"

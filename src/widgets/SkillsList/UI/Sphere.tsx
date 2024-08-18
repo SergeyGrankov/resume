@@ -9,7 +9,7 @@ import TagSphere from './TagSphere';
 
 interface IProps {
   className?: string;
-  tags: ITags | Array<string>;
+  tags: ITags;
   radius: number;
 }
 
@@ -17,19 +17,15 @@ export default function Sphere({ radius, tags, className }: IProps) {
   return (
     <ErrorBoundary FallbackComponent={Fallback}>
       <TagSphere
-        tags={tags.map((i: ITag | string) =>
-          typeof i === 'string' ? (
-            i
-          ) : (
-            <Image
-              width={50}
-              height={50}
-              src={i['src']}
-              key={i['key']}
-              alt={i['key']}
-            />
-          )
-        )}
+        tags={tags.map((i: ITag) => (
+          <Image
+            width={50}
+            height={50}
+            src={i['src']}
+            key={i['key']}
+            alt={i['key']}
+          />
+        ))}
         initialSpeed={4}
         maxSpeed={15}
         radius={radius}

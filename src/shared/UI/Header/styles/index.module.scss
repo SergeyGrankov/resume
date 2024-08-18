@@ -17,7 +17,7 @@
   &:hover,
   &:focus {
     border-color: var(--hover);
-    color: $extra-white;
+    color: $white;
   }
 
   @include media(small-laptop) {

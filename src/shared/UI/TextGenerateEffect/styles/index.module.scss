@@ -1,7 +1,6 @@
 @import '#/colors.scss';
 
 .word {
-  color: $extra-white;
   opacity: 0;
 }
 
@@ -10,6 +9,9 @@
 }
 
 .words {
-  color: $extra-white;
   letter-spacing: 0.025em;
+}
+
+.dark {
+  color: $light-gray;
 }

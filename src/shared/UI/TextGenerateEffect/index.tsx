@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useEffect } from 'react';
+import classNames from 'classnames';
 import { motion, stagger, useAnimate } from 'framer-motion';
 
 import styles from './styles/index.module.scss';
 
 interface IProps {
   words: string;
+  isDark?: boolean;
   className?: string;
   filter?: boolean;
   duration?: number;
@@ -14,6 +16,7 @@ interface IProps {
 
 export default function TextGenerateEffect({
   words,
+  isDark,
   className,
   filter = true,
   duration = 0.5,
@@ -43,7 +46,9 @@ export default function TextGenerateEffect({
           return (
             <motion.span
               key={word + idx}
-              className={styles.word}
+              className={classNames(styles.word, {
+                [styles.dark]: isDark,
+              })}
               style={{
                 filter: filter ? 'blur(10px)' : 'none',
               }}
@@ -59,7 +64,13 @@ export default function TextGenerateEffect({
   return (
     <div className={className}>
       <div className={styles.subContainer}>
-        <div className={styles.words}>{renderWords()}</div>
+        <div
+          className={classNames(styles.words, {
+            [styles.dark]: isDark,
+          })}
+        >
+          {renderWords()}
+        </div>
       </div>
     </div>
   );

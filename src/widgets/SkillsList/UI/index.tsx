@@ -2,10 +2,11 @@ import React from 'react';
 
 import BoxContainer from '@/shared/UI/BoxContainer';
 import Header from '@/shared/UI/Header';
-import Sphere from '@/shared/UI/Sphere';
 import Tile from '@/shared/UI/Tile';
 
 import { mainSkillsTags, skills } from '../consts/skills';
+
+import Sphere from './Sphere';
 
 import styles from '../styles/index.module.scss';
 
@@ -21,10 +22,12 @@ export default function SkillsList() {
           className={styles.skillsSphere}
         />
 
-        <div className={styles.tilesContainer}>
-          {skills.map((itemText, index) => {
-            return <Tile text={itemText} key={index} />;
-          })}
+        <div className={styles.shadows}>
+          <div className={styles.tilesContainer}>
+            {skills.map((itemText, index) => {
+              return <Tile text={itemText} key={index} />;
+            })}
+          </div>
         </div>
       </div>
     </BoxContainer>
