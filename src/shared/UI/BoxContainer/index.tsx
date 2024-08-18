@@ -10,7 +10,7 @@ interface IProps {
 }
 
 export default function BoxContainer({ children, className }: IProps) {
-  const cn = classNames(styles.container, className);
+  const cn = classNames(styles.outerContainer, className);
 
   return <Box className={cn}>{children}</Box>;
 }
