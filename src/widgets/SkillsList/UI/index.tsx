@@ -13,7 +13,7 @@ import styles from '../styles/index.module.scss';
 export default function SkillsList() {
   return (
     <BoxContainer>
-      <Header id="mainSkills" text="Main skills" animationStyle="raise" />
+      <Header id="mainSkills" text="Main skills" />
 
       <div className={styles.skills}>
         <Sphere

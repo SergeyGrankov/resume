@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import classNames from 'classnames';
+import { motion } from 'framer-motion';
 
 import styles from './styles/index.module.scss';
 
@@ -7,7 +10,6 @@ interface IProps {
   text: string;
   id: string;
   withoutBorder?: boolean;
-  animationStyle?: 'pulse' | 'raise' | '';
   className?: string;
 }
 
@@ -15,16 +17,21 @@ export default function Header({
   text,
   id,
   withoutBorder = false,
-  animationStyle = '',
   className,
 }: IProps) {
-  const cn = classNames(styles.header, styles[animationStyle], className, {
+  const cn = classNames(styles.header, className, {
     [styles.withoutBorder]: withoutBorder,
   });
 
   return (
-    <h1 id={id} className={cn}>
+    <motion.h1
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -100 }}
+      transition={{ duration: 0.6 }}
+      id={id}
+      className={cn}
+    >
       {text}
-    </h1>
+    </motion.h1>
   );
 }

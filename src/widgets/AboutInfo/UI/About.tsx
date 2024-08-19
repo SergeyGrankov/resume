@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import BadgeIcon from '@mui/icons-material/Badge';
 import ElderlyIcon from '@mui/icons-material/Elderly';
@@ -5,6 +7,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
+import { motion } from 'framer-motion';
 
 import { colors } from '@/shared/consts/colors';
 import TextGenerateEffect from '@/shared/UI/TextGenerateEffect';
@@ -31,34 +34,61 @@ export default function About() {
         }
         spacing={2}
       >
-        <div className={styles.info}>
+        <motion.div
+          className={styles.info}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 200 }}
+          transition={{ duration: 0.6, delay: 0 }}
+        >
           <BadgeIcon sx={{ marginRight: '8px' }} viewBox="0 4 24 24" />
           Full&nbsp;name: Grankov&nbsp;Sergey&nbsp;Nikitich
-        </div>
+        </motion.div>
 
-        <div className={styles.info}>
+        <motion.div
+          className={styles.info}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 200 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <ElderlyIcon sx={{ marginRight: '8px' }} />
           Age: 23&nbsp;y.o.
-        </div>
+        </motion.div>
 
-        <div className={styles.info}>
+        <motion.div
+          className={styles.info}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 200 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
           <HomeIcon sx={{ marginRight: '8px' }} />
           Location: Russia,&nbsp;Moscow
-        </div>
+        </motion.div>
 
-        <div className={styles.info}>
+        <motion.div
+          className={styles.info}
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 200 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
           <SchoolIcon sx={{ marginRight: '8px' }} />
           Education: Higher&nbsp;education
-        </div>
+        </motion.div>
       </Stack>
 
-      <Image
-        className={styles.photo}
-        src="/widgets/AboutInfo/me.webp"
-        width={220}
-        height={280}
-        alt="My image"
-      />
+      <motion.div
+        className={styles.photoWrapper}
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 0.6, delay: 1.2 }}
+      >
+        <Image
+          className={styles.photo}
+          src="/widgets/AboutInfo/me.webp"
+          width={220}
+          height={280}
+          alt="My image"
+        />
+      </motion.div>
     </div>
   );
 }

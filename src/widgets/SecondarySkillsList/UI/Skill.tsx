@@ -1,20 +1,35 @@
-import React from 'react';
+'use client';
 
-import TextGenerateEffect from '@/shared/UI/TextGenerateEffect';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 import styles from '../styles/skill.module.scss';
 
 interface IProps {
   title: string;
   text: string;
-  duration: number;
+  delay: number;
 }
 
-export default function Skill({ title, text, duration }: IProps) {
+export default function Skill({ title, text, delay }: IProps) {
   return (
     <div className={styles.subContainer}>
-      <TextGenerateEffect words={title} duration={duration} />
-      <TextGenerateEffect duration={duration} words={text} isDark />
+      <motion.div
+        className={styles.title}
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 0.6, delay }}
+      >
+        {title}
+      </motion.div>
+      <motion.div
+        className={styles.text}
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 0.6, delay: delay + 0.2 }}
+      >
+        {text}
+      </motion.div>
     </div>
   );
 }

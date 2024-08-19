@@ -6,9 +6,7 @@ import Component from '.';
 
 describe('Header', () => {
   it('renders the Header component', () => {
-    const { container } = render(
-      <Component id="mainSkills" text="some" animationStyle="pulse" />
-    );
+    const { container } = render(<Component id="mainSkills" text="some" />);
 
     expect(container.firstChild).not.toBeNull();
   });

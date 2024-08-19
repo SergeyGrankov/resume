@@ -10,52 +10,12 @@
   line-height: 1;
   padding: 6px;
   margin: 0;
-  color: var(--color);
-  transition: 0.25s;
-  scroll-margin-top: 90px;
-
-  &:hover,
-  &:focus {
-    border-color: var(--hover);
-    color: $white;
-  }
 
   @include media(small-laptop) {
-    scroll-margin-top: 108px;
     font-size: 22px;
   }
 }
 
 .withoutBorder {
   border-bottom: none;
-}
-
-.pulse:hover,
-.pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-.raise:hover,
-.raise:focus {
-  box-shadow: 0 0.5em 0.7em -0.4em var(--hover);
-  transform: translateY(-0.25em);
-}
-
-$colors: (
-  pulse: $white,
-  raise: $white,
-);
-
-@each $button, $color in $colors {
-  .#{$button} {
-    --color: #{$color};
-    --hover: #{adjust-hue($color, 45deg)};
-  }
 }
