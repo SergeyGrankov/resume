@@ -100,6 +100,7 @@ const config: Config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^#/(.*)$': '<rootDir>/src/app/$1',
+    '^root/(.*)$': '<rootDir>/$1',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

@@ -3,6 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { getMotionProps } from '@/shared/lib/getMotionProps';
+
 import styles from '../styles/skill.module.scss';
 
 interface IProps {
@@ -14,20 +16,10 @@ interface IProps {
 export default function Skill({ title, text, delay }: IProps) {
   return (
     <div className={styles.subContainer}>
-      <motion.div
-        className={styles.title}
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 0.6, delay }}
-      >
+      <motion.div className={styles.title} {...getMotionProps(delay)}>
         {title}
       </motion.div>
-      <motion.div
-        className={styles.text}
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 0.6, delay: delay + 0.2 }}
-      >
+      <motion.div className={styles.text} {...getMotionProps(delay + 0.2)}>
         {text}
       </motion.div>
     </div>

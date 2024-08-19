@@ -10,6 +10,7 @@ import Stack from '@mui/material/Stack';
 import { motion } from 'framer-motion';
 
 import { colors } from '@/shared/consts/colors';
+import { getMotionProps } from '@/shared/lib/getMotionProps';
 import TextGenerateEffect from '@/shared/UI/TextGenerateEffect';
 import Image from 'next/image';
 
@@ -34,53 +35,28 @@ export default function About() {
         }
         spacing={2}
       >
-        <motion.div
-          className={styles.info}
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.6, delay: 0 }}
-        >
+        <motion.div className={styles.info} {...getMotionProps(0)}>
           <BadgeIcon sx={{ marginRight: '8px' }} viewBox="0 4 24 24" />
           Full&nbsp;name: Grankov&nbsp;Sergey&nbsp;Nikitich
         </motion.div>
 
-        <motion.div
-          className={styles.info}
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
+        <motion.div className={styles.info} {...getMotionProps(0.2)}>
           <ElderlyIcon sx={{ marginRight: '8px' }} />
           Age: 23&nbsp;y.o.
         </motion.div>
 
-        <motion.div
-          className={styles.info}
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
+        <motion.div className={styles.info} {...getMotionProps(0.4)}>
           <HomeIcon sx={{ marginRight: '8px' }} />
           Location: Russia,&nbsp;Moscow
         </motion.div>
 
-        <motion.div
-          className={styles.info}
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
+        <motion.div className={styles.info} {...getMotionProps(0.6)}>
           <SchoolIcon sx={{ marginRight: '8px' }} />
           Education: Higher&nbsp;education
         </motion.div>
       </Stack>
 
-      <motion.div
-        className={styles.photoWrapper}
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 0.6, delay: 1.2 }}
-      >
+      <motion.div className={styles.photoWrapper} {...getMotionProps(1.2)}>
         <Image
           className={styles.photo}
           src="/widgets/AboutInfo/me.webp"

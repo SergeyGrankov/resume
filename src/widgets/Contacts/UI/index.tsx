@@ -8,6 +8,7 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import IconButton from '@mui/material/IconButton';
 import { motion } from 'framer-motion';
 
+import { getMotionProps } from '@/shared/lib/getMotionProps';
 import Header from '@/shared/UI/Header';
 
 import styles from '../styles/index.module.scss';
@@ -25,12 +26,7 @@ export default function Contacts() {
     <div className={styles.container}>
       <Header id="contacts" text="Get in touch:" withoutBorder />
 
-      <motion.div
-        className={styles.info}
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      <motion.div className={styles.info} {...getMotionProps(0.2)}>
         <CallIcon sx={{ marginRight: '8px' }} />
         Telephone:{' '}
         <a href="tel:+79859383263" className={styles.link}>
@@ -41,9 +37,7 @@ export default function Contacts() {
       <motion.div
         className={styles.info}
         onClick={() => copyTextToClipboard('ima_vandal')}
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        {...getMotionProps(0.4)}
       >
         <TelegramIcon sx={{ marginRight: '8px' }} />
         Telegram: ima_vandal
@@ -55,9 +49,7 @@ export default function Contacts() {
       <motion.div
         className={styles.info}
         onClick={() => copyTextToClipboard('1910serg@mail.ru')}
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 100 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        {...getMotionProps(0.6)}
       >
         <MailIcon sx={{ marginRight: '8px' }} />
         Mail: 1910serg@mail.ru
