@@ -17,7 +17,7 @@ export default function Skill({ title, text, delay }: IProps) {
       <motion.div
         className={styles.title}
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.6, delay }}
       >
         {title}
@@ -25,7 +25,7 @@ export default function Skill({ title, text, delay }: IProps) {
       <motion.div
         className={styles.text}
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.6, delay: delay + 0.2 }}
       >
         {text}

@@ -37,7 +37,7 @@ export default function About() {
         <motion.div
           className={styles.info}
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.6, delay: 0 }}
         >
           <BadgeIcon sx={{ marginRight: '8px' }} viewBox="0 4 24 24" />
@@ -47,7 +47,7 @@ export default function About() {
         <motion.div
           className={styles.info}
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <ElderlyIcon sx={{ marginRight: '8px' }} />
@@ -57,7 +57,7 @@ export default function About() {
         <motion.div
           className={styles.info}
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <HomeIcon sx={{ marginRight: '8px' }} />
@@ -67,7 +67,7 @@ export default function About() {
         <motion.div
           className={styles.info}
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <SchoolIcon sx={{ marginRight: '8px' }} />
@@ -78,7 +78,7 @@ export default function About() {
       <motion.div
         className={styles.photoWrapper}
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.6, delay: 1.2 }}
       >
         <Image

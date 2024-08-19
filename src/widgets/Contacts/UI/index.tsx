@@ -28,7 +28,7 @@ export default function Contacts() {
       <motion.div
         className={styles.info}
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <CallIcon sx={{ marginRight: '8px' }} />
@@ -42,7 +42,7 @@ export default function Contacts() {
         className={styles.info}
         onClick={() => copyTextToClipboard('ima_vandal')}
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <TelegramIcon sx={{ marginRight: '8px' }} />
@@ -56,7 +56,7 @@ export default function Contacts() {
         className={styles.info}
         onClick={() => copyTextToClipboard('1910serg@mail.ru')}
         whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.6, delay: 0.6 }}
       >
         <MailIcon sx={{ marginRight: '8px' }} />
