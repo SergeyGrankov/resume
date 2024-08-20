@@ -63,6 +63,7 @@ export default function About() {
           width={220}
           height={280}
           alt="My image"
+          loading="eager"
         />
       </motion.div>
     </div>

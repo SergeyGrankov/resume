@@ -18,6 +18,7 @@ jest.mock('@/widgets/SecondarySkillsList', () => () => <div />);
 jest.mock('@/widgets/ParticlesBlock', () => () => <div />);
 jest.mock('@/widgets/Anchorbar', () => () => <div />);
 jest.mock('@/widgets/AboutInfo', () => () => <div />);
+jest.mock('@/widgets/Experience', () => () => <div />);
 
 describe('HomeContent', () => {
   it('renders the HomeContent component', () => {

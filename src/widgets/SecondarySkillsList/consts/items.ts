@@ -17,12 +17,12 @@ export const items: IItem[] = [
   },
   {
     title: 'Architectural planning',
-    text: 'Transferred a large commercial project of the largest real estate platform in Russia to a new architectural base.',
+    text: 'I transferred a large commercial project of the largest real estate platform in Russia to a new architectural base.',
     delay: 0.6,
   },
   {
     title: 'Participation in CI/CD processes',
-    text: 'Took an active role in deploying the project to production and test environments, monitored website performance, identified errors on multiple pages, and worked on resolving these issues.',
+    text: 'I Took an active role in deploying the project to production and test environments, monitored website performance, identified errors on multiple pages, and worked on resolving these issues.',
     delay: 0.8,
   },
 ];

@@ -65,7 +65,7 @@ export default function TextGenerateEffect({
     <div className={className}>
       <div className={styles.subContainer}>
         <div
-          className={classNames(styles.words, {
+          className={classNames({
             [styles.dark]: isDark,
           })}
         >

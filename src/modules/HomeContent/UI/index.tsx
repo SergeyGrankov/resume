@@ -2,6 +2,7 @@ import React from 'react';
 
 import AboutInfo from '@/widgets/AboutInfo';
 import Anchorbar from '@/widgets/Anchorbar';
+import Experience from '@/widgets/Experience';
 import ParticlesBlock from '@/widgets/ParticlesBlock';
 import SecondarySkillsList from '@/widgets/SecondarySkillsList';
 import SkillsList from '@/widgets/SkillsList';
@@ -22,6 +23,7 @@ export default function HomeContent() {
         <AboutInfo />
         <SkillsList />
         <SecondarySkillsList />
+        <Experience />
       </TracingBeam>
     </>
   );

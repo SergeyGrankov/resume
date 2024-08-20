@@ -25,11 +25,11 @@ export default function Header({
 
   return (
     <motion.h1
+      id={id}
+      className={cn}
       whileInView={{ opacity: 1, x: 0 }}
       initial={{ opacity: 0, x: -100 }}
       transition={{ duration: 0.6 }}
-      id={id}
-      className={cn}
     >
       {text}
     </motion.h1>

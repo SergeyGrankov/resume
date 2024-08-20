@@ -24,6 +24,7 @@ export default function Sphere({ radius, tags, className }: IProps) {
             src={i['src']}
             key={i['key']}
             alt={i['key']}
+            loading="lazy"
           />
         ))}
         initialSpeed={4}

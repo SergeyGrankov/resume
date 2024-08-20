@@ -21,6 +21,7 @@ export default function AdditionalContent() {
           alt="Фото Апофеоз Геркулеса2"
           width={500}
           height={300}
+          loading="lazy"
         />
         <div className={styles.testLine} />
       </BoxContainer>
