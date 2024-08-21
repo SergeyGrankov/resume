@@ -25,17 +25,10 @@ export default function Proud() {
             key={index}
             {...getMotionProps(index * 0.2)}
           >
-            <motion.span
-              className={styles.icon}
-              initial={{ opacity: 0, y: -280, x: -100, rotate: 0 }}
-              whileInView={{ opacity: 1, y: 0, x: 0, rotate: -720 }}
-              transition={{ duration: 1, delay: index * 0.3 }}
-            >
-              <StarRoundedIcon
-                sx={{ color: colors.YELLOW, height: 17, width: 17 }}
-                viewBox="3 4 17 16"
-              />
-            </motion.span>
+            <StarRoundedIcon
+              sx={{ color: colors.YELLOW, height: 17, width: 17 }}
+              viewBox="3 4 17 16"
+            />
             {text}
           </motion.div>
         ))}
