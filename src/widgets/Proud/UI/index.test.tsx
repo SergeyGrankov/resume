@@ -5,9 +5,9 @@ import { render } from '@testing-library/react';
 
 import Component from '.';
 
-describe('Header', () => {
-  it('renders the Header component', () => {
-    const { container } = render(<Component id="mainSkills" text="some" />);
+describe('Proud', () => {
+  it('renders the Proud component', () => {
+    const { container } = render(<Component />);
 
     expect(container.firstChild).not.toBeNull();
   });

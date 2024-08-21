@@ -5,6 +5,7 @@ import Link from '@mui/material/Link';
 import { motion } from 'framer-motion';
 
 import { getMotionProps } from '@/shared/lib/getMotionProps';
+import BoxContainer from '@/shared/UI/BoxContainer';
 import Header from '@/shared/UI/Header';
 import Image from 'next/image';
 
@@ -12,7 +13,7 @@ import styles from '../styles/index.module.scss';
 
 export default function Experience() {
   return (
-    <div>
+    <BoxContainer>
       <Header id="experience" text="Experience" />
 
       <div className={styles.info}>
@@ -42,7 +43,7 @@ export default function Experience() {
         </motion.div>
 
         <motion.div className={styles.title} {...getMotionProps(1)}>
-          Worked on 3 different projects:
+          I have worked on three projects:
         </motion.div>
         <motion.div className={styles.title} {...getMotionProps(1.2)}>
           1. Frontend for Residential Complex Pages:
@@ -92,7 +93,7 @@ export default function Experience() {
           <br />
           This is the primary project for listing search results. I also
           developed new components, worked with metrics, fixed bugs, and covered
-          the application with unit tests on this project.
+          the application with unit tests in this project.
         </motion.div>
         <motion.div className={styles.title} {...getMotionProps(1.6)}>
           3. Airbnb-style Startup:
@@ -111,6 +112,6 @@ export default function Experience() {
           <br />I had the opportunity to work on this startup.
         </motion.div>
       </div>
-    </div>
+    </BoxContainer>
   );
 }

@@ -64,10 +64,8 @@ export default function TracingBeam({ children, className }: IProps) {
               delay: 0.5,
             }}
             animate={{
-              backgroundColor:
-                scrollYProgress.get() > 0 ? 'white' : 'var(--emerald-500)',
-              borderColor:
-                scrollYProgress.get() > 0 ? 'white' : 'var(--emerald-600)',
+              backgroundColor: scrollYProgress.get() > 0 ? '#000' : '#675adb',
+              borderColor: scrollYProgress.get() > 0 ? '#000' : '#675adb',
             }}
             className={styles.insideCircle}
           />

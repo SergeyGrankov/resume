@@ -4,6 +4,7 @@ import AboutInfo from '@/widgets/AboutInfo';
 import Anchorbar from '@/widgets/Anchorbar';
 import Experience from '@/widgets/Experience';
 import ParticlesBlock from '@/widgets/ParticlesBlock';
+import Proud from '@/widgets/Proud';
 import SecondarySkillsList from '@/widgets/SecondarySkillsList';
 import SkillsList from '@/widgets/SkillsList';
 import Background from '@/shared/UI/Background';
@@ -24,6 +25,7 @@ export default function HomeContent() {
         <SkillsList />
         <SecondarySkillsList />
         <Experience />
+        <Proud />
       </TracingBeam>
     </>
   );

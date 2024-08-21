@@ -1,16 +1,26 @@
 import React, { ReactNode } from 'react';
 import Box from '@mui/material/Box';
-import classNames from 'classnames';
-
-import styles from './styles/index.module.scss';
 
 interface IProps {
   children: ReactNode;
-  className?: string;
+  sxOptions?: Object;
 }
 
-export default function BoxContainer({ children, className }: IProps) {
-  const cn = classNames(styles.outerContainer, className);
+export default function BoxContainer({ children, sxOptions }: IProps) {
+  return (
+    <Box
+      sx={{
+        position: 'relative',
+        margin: '84px 0',
+        zIndex: 1,
+        md: {
+          margin: '102px 0',
+        },
 
-  return <Box className={cn}>{children}</Box>;
+        ...sxOptions,
+      }}
+    >
+      {children}
+    </Box>
+  );
 }

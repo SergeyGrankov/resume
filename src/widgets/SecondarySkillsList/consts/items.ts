@@ -22,7 +22,7 @@ export const items: IItem[] = [
   },
   {
     title: 'Participation in CI/CD processes',
-    text: 'I Took an active role in deploying the project to production and test environments, monitored website performance, identified errors on multiple pages, and worked on resolving these issues.',
+    text: 'I took an active role in deploying the project to production and test environments, monitored website performance, identified errors on multiple pages, and worked on resolving these issues.',
     delay: 0.8,
   },
 ];

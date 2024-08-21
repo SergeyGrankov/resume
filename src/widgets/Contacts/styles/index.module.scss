@@ -1,25 +1,12 @@
 @import '#/colors.scss';
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items:center;
-  position: relative;
-  height: 160px;
-  background-color: $black;
-  margin-top: 34px;
-  padding: 24px 0;
-  border-top: 1px solid $space-gray;
-}
-
 .info {
   display: flex;
   align-items: center;
 }
 
 .link {
-  margin-left: 4px;
+  margin-left: 6px;
   text-decoration: none;
   color: $blue;
 }

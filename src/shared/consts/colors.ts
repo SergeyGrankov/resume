@@ -9,4 +9,5 @@ export enum colors {
   SPACE_GRAY = '#4d4d4d',
   CANDY = '#38d6af',
   BLUE = '#0288d1',
+  YELLOW = '#fced6b',
 }
