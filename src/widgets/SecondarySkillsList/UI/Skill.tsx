@@ -16,10 +16,13 @@ interface IProps {
 export default function Skill({ title, text, delay }: IProps) {
   return (
     <div className={styles.subContainer}>
-      <motion.div className={styles.title} {...getMotionProps(delay)}>
+      <motion.div className={styles.title} {...getMotionProps({ delay })}>
         {title}
       </motion.div>
-      <motion.div className={styles.text} {...getMotionProps(delay + 0.2)}>
+      <motion.div
+        className={styles.text}
+        {...getMotionProps({ delay: delay + 0.2 })}
+      >
         {text}
       </motion.div>
     </div>

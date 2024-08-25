@@ -2,10 +2,15 @@
   margin-top: 32px;
 }
 
-.text {
-  display: flex;
+.subContainer {
+  width: 100%;
+  display: inline-flex;
   align-content: center;
   margin-bottom: 14px;
-  align-items: start;
-  gap: 6px;
+  gap: 8px;
+}
+
+.star {
+  width: fit-content;
+  height: fit-content;
 }

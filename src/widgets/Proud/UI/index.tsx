@@ -20,17 +20,26 @@ export default function Proud() {
 
       <div className={styles.container}>
         {texts.map((text, index) => (
-          <motion.div
-            className={styles.text}
-            key={index}
-            {...getMotionProps(index * 0.2, { y: -300 })}
-          >
-            <StarRoundedIcon
-              sx={{ color: colors.YELLOW, height: 17, width: 17 }}
-              viewBox="3 4 17 16"
-            />
-            {text}
-          </motion.div>
+          // Разбиение на слои нужны для правильной работы motion в сафари на мобильных устройствах
+          <div key={index} className={styles.subContainer}>
+            <motion.span
+              className={styles.star}
+              {...getMotionProps({
+                delay: index * 0.3,
+                y: -300,
+                rotate: 1440,
+              })}
+            >
+              <StarRoundedIcon
+                sx={{ color: colors.YELLOW, height: 17, width: 17 }}
+                viewBox="3 4 17 16"
+              />
+            </motion.span>
+
+            <motion.span {...getMotionProps({ delay: index * 0.2 })}>
+              {text}
+            </motion.span>
+          </div>
         ))}
       </div>
     </BoxContainer>
