@@ -23,7 +23,7 @@ export default function Proud() {
           <motion.div
             className={styles.text}
             key={index}
-            {...getMotionProps(index * 0.2)}
+            {...getMotionProps(index * 0.2, { y: -300 })}
           >
             <StarRoundedIcon
               sx={{ color: colors.YELLOW, height: 17, width: 17 }}
