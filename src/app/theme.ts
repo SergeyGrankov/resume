@@ -29,6 +29,15 @@ const theme = createTheme({
       xl: 1920, // large screens
     },
   },
+  components: {
+    MuiTabs: {
+      styleOverrides: {
+        flexContainer: {
+          justifyContent: 'center',
+        },
+      },
+    },
+  },
 });
 
 export default theme;
