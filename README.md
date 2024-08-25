@@ -6,12 +6,6 @@
 
 Hello! Thank you for taking the time to check out my project. I hope you really like it. I created it to showcase what I am capable of (or at least a small part of it). In the future, I plan to expand the project and add more features so that my future colleagues can see what they are looking for. This project might not be perfect in some places, but I am doing my best. Have a nice day. <3
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 # Архитектура
 
 \__ **public**/ - Ассеты, которые структурируются внутри на подразделы app\modules\widgets\shared.
