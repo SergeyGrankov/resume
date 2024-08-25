@@ -16,6 +16,7 @@ jest.mock('@/shared/UI/TracingBeam', () => ({ children }: IProps) => (
 jest.mock('@/widgets/SkillsList', () => () => <div />);
 jest.mock('@/widgets/SecondarySkillsList', () => () => <div />);
 jest.mock('@/widgets/ParticlesBlock', () => () => <div />);
+jest.mock('@/widgets/Recomendations', () => () => <div />);
 jest.mock('@/widgets/Proud', () => () => <div />);
 jest.mock('@/widgets/Anchorbar', () => () => <div />);
 jest.mock('@/widgets/AboutInfo', () => () => <div />);

@@ -3,63 +3,63 @@ import { ITag } from '@/shared/consts/skills';
 export const mainSkillsTags: Array<ITag> = [
   {
     src: 'https://cdn.svgporn.com/logos/react.svg',
-    key: 'Реакт',
+    alt: 'Реакт',
   },
   {
     src: 'https://cdn.svgporn.com/logos/javascript.svg',
-    key: 'JS',
+    alt: 'JS',
   },
   {
     src: 'https://cdn.svgporn.com/logos/sass.svg',
-    key: 'sass',
+    alt: 'sass',
   },
   {
     src: 'https://cdn.svgporn.com/logos/docker.svg',
-    key: 'docker',
+    alt: 'docker',
   },
   {
     src: 'https://cdn.svgporn.com/logos/git.svg',
-    key: 'git',
+    alt: 'git',
   },
   {
     src: 'https://cdn.svgporn.com/logos/webpack.svg',
-    key: 'webpack',
+    alt: 'webpack',
   },
   {
     src: 'https://cdn.svgporn.com/logos/vitejs.svg',
-    key: 'vitejs',
+    alt: 'vitejs',
   },
   {
     src: 'https://cdn.svgporn.com/logos/nextjs-icon.svg',
-    key: 'nextjs',
+    alt: 'nextjs',
   },
   {
     src: 'https://cdn.svgporn.com/logos/redux.svg',
-    key: 'redux',
+    alt: 'redux',
   },
   {
     src: 'https://cdn.svgporn.com/logos/typescript-icon.svg',
-    key: 'typescript',
+    alt: 'typescript',
   },
   {
     src: 'https://cdn.svgporn.com/logos/eslint.svg',
-    key: 'eslint',
+    alt: 'eslint',
   },
   {
     src: 'https://cdn.svgporn.com/logos/jira.svg',
-    key: 'jira',
+    alt: 'jira',
   },
   {
     src: 'https://cdn.svgporn.com/logos/confluence.svg',
-    key: 'confluence',
+    alt: 'confluence',
   },
   {
     src: 'https://cdn.svgporn.com/logos/jest.svg',
-    key: 'jest',
+    alt: 'jest',
   },
   {
     src: 'https://cdn.svgporn.com/logos/react-router.svg',
-    key: 'jest',
+    alt: 'jest',
   },
 ];
 

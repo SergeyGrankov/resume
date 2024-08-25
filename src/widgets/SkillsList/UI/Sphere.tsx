@@ -22,8 +22,8 @@ export default function Sphere({ radius, tags, className }: IProps) {
             width={50}
             height={50}
             src={i['src']}
-            key={i['key']}
-            alt={i['key']}
+            key={i['alt']}
+            alt={i['alt']}
             loading="lazy"
           />
         ))}

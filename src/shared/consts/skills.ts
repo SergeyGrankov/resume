@@ -1,6 +1,6 @@
 export interface ITag {
   src: string;
-  key: string;
+  alt: string;
 }
 
 export type ITags = ITag[];
