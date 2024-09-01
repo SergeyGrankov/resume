@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
 import Component from '.';
 
-jest.mock('@/shared/UI/BoxContainer', () => () => <div />);
-jest.mock('@/shared/UI/ScrollToTop', () => () => <div />);
+interface IProps {
+  children: ReactNode;
+}
+
+jest.mock('@/shared/UI/TracingBeam', () => ({ children }: IProps) => (
+  <div>{children}</div>
+));
 
 describe('AdditionalContent', () => {
   it('renders the AdditionalContent component', () => {

@@ -8,8 +8,6 @@ interface IProps {
   children: ReactNode;
 }
 
-jest.mock('@/shared/UI/ScrollToTop', () => () => <div />);
-jest.mock('@/shared/UI/Background', () => () => <div />);
 jest.mock('@/shared/UI/TracingBeam', () => ({ children }: IProps) => (
   <div>{children}</div>
 ));

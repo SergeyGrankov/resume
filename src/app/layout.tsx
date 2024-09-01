@@ -5,6 +5,8 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 
 import Contacts from '@/widgets/Contacts';
 import Navbar from '@/widgets/Navbar';
+import Background from '@/shared/UI/Background';
+import ScrollToTop from '@/shared/UI/ScrollToTop';
 
 import theme from './theme';
 
@@ -27,6 +29,8 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <Navbar />
+            <Background />
+            <ScrollToTop />
             {children}
             <Contacts />
           </ThemeProvider>
