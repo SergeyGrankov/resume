@@ -12,7 +12,10 @@ export default function AboutInfo() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        marginTop: '34px',
+        margin: {
+          xs: '34px 0 84px 0',
+          md: '34px 0 160px 0',
+        },
         gap: '32px',
       }}
     >

@@ -8,7 +8,7 @@ export const items: Record<
     surname: 'Pankratov',
     post: 'Senior Frontend-developer',
     role: '(team-lead)',
-    telephone: '+7-(926)-462-09-53',
+    telephone: '+7 (926)-462-09-53',
   },
   {
     src: '/widgets/Recomendations/beshlyaga.webp',
@@ -16,7 +16,7 @@ export const items: Record<
     surname: 'Beshlyaga',
     post: 'Senior Frontend-developer',
     role: '(tech-lead)',
-    telephone: '+7-(926)-816-90-59',
+    telephone: '+7 (926)-816-90-59',
   },
   {
     src: '/widgets/Recomendations/opalev.webp',
@@ -24,7 +24,7 @@ export const items: Record<
     surname: 'Opalev',
     post: 'Senior Backend-developer',
     role: '(head of the IT sector)',
-    telephone: '+7-(912)-212-60-74',
+    telephone: '+7 (912)-212-60-74',
   },
   {
     src: '/widgets/Recomendations/ryazanova.webp',
@@ -32,6 +32,6 @@ export const items: Record<
     surname: 'Ryazanova',
     post: 'Senior Backend-developer',
     role: '(tech-lead)',
-    telephone: '+7-(916)-538-70-24',
+    telephone: '+7 (916)-538-70-24',
   },
 ];

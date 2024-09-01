@@ -3,12 +3,11 @@
 .container {
   display: flex;
   justify-content: space-between;
-  gap: 26px;
+  gap: 40px;
   flex-direction: column;
 
   @include media(desktop) {
     flex-direction: row;
-    gap: 40px;
   }
 }
 

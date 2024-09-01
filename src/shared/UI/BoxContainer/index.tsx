@@ -11,10 +11,10 @@ export default function BoxContainer({ children, sxOptions }: IProps) {
     <Box
       sx={{
         position: 'relative',
-        margin: '84px 0',
         zIndex: 1,
-        md: {
-          margin: '102px 0',
+        margin: {
+          xs: '84px 0',
+          md: '160px 0',
         },
 
         ...sxOptions,

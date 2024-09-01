@@ -14,7 +14,14 @@ import styles from '../styles/index.module.scss';
 
 export default function Recomendations() {
   return (
-    <BoxContainer>
+    <BoxContainer
+      sxOptions={{
+        margin: {
+          xs: '84px 0',
+          md: '250px 0',
+        },
+      }}
+    >
       <Header id="recomendations" text="Recomendations" />
 
       <div className={styles.items}>
