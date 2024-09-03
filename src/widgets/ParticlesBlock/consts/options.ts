@@ -16,8 +16,8 @@ export const options: IOptions = {
   },
   particles: {
     number: {
-      value: 140,
-      limit: 180,
+      value: 80,
+      limit: 160,
       density: {
         enable: true,
         area: 800,

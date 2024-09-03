@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import '@testing-library/jest-dom';
-import 'root/__mocks__/react-intersection-observer';
 import { render } from '@testing-library/react';
 
 import Component from '.';
@@ -10,6 +9,7 @@ interface IProps {
 }
 
 jest.mock('./About', () => () => <div />);
+jest.mock('@/shared/UI/Header', () => () => <div />);
 jest.mock('@/shared/UI/BoxContainer', () => ({ children }: IProps) => (
   <div>{children}</div>
 ));

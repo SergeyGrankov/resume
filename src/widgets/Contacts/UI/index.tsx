@@ -44,7 +44,7 @@ export default function Contacts() {
         <CallIcon sx={{ marginRight: '8px' }} />
         Telephone:
         <a href="tel:+79859383263" className={styles.telephone}>
-          +7-(985)-938-32-63
+          +7 (985)-938-32-63
         </a>
       </div>
 

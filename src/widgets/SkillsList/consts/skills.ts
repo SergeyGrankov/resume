@@ -59,7 +59,7 @@ export const mainSkillsTags: Array<ITag> = [
   },
   {
     src: 'https://cdn.svgporn.com/logos/react-router.svg',
-    alt: 'jest',
+    alt: 'react-router',
   },
 ];
 

@@ -1,9 +1,11 @@
 import React from 'react';
-import 'root/__mocks__/react-intersection-observer';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 
 import Component from '.';
+
+jest.mock('@/shared/UI/Header', () => () => <div />);
+jest.mock('./Card', () => () => <div />);
 
 describe('Recomendations', () => {
   it('renders the Recomendations component', () => {

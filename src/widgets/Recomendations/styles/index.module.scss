@@ -1,58 +1,7 @@
-@import '#/colors.scss';
-@import '#/breakpoints.scss';
-
 .items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 32px;
   gap: 16px;
-}
-
-.wrapper {
-  display: flex;
-  padding: 8px;
-  border-radius: 12px;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.wrapper:hover {
-  box-shadow: 0 1px 19px 0 rgba(255, 255, 255, 0.527);
-}
-
-.photo {
-  border-radius: 50%;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  margin-left: 24px;
-}
-
-.name {
-  color: $white;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-.post {
-  color: $light-gray;
-  font-size: 12px;
-  margin-top: 8px;
-}
-
-.role {
-  color: $light-gray;
-  margin-top: 4px;
-  font-size: 12px;
-}
-
-.telephone {
-  display: block;
-  text-decoration: none;
-  color: $blue;
-  font-size: 12px;
-  margin-top: 8px;
-  white-space: nowrap;
 }
