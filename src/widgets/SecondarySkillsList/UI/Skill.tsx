@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import { getMotionProps } from '@/shared/lib/getMotionProps';
 
-import styles from '../styles/Skill.module.scss';
+import styles from '../styles/skill.module.scss';
 
 interface IProps {
   title: string;
