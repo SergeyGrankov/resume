@@ -16,7 +16,7 @@ import Image from 'next/image';
 
 import { words } from '../consts/words';
 
-import styles from '../styles/about.module.scss';
+import styles from '../styles/About.module.scss';
 
 export default function About() {
   return (

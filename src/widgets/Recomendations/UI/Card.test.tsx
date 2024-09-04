@@ -25,7 +25,7 @@ describe('Card', () => {
     render(<Component index={1} item={item} />);
 
     expect(screen.queryByText('Show contacts')).toBeInTheDocument();
-    expect(screen.queryByTestId('telephone')).toBeNull();
+    expect(screen.queryByTestId('telephone')).not.toBeInTheDocument();
 
     fireEvent.click(screen.getByText('Show contacts'));
 
