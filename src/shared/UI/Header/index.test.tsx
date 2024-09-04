@@ -7,7 +7,7 @@ import Component from '.';
 
 describe('Header', () => {
   it('renders the Header component', () => {
-    const { container } = render(<Component id="mainSkills" text="some" />);
+    const { container } = render(<Component text="some" />);
 
     expect(container.firstChild).not.toBeNull();
   });

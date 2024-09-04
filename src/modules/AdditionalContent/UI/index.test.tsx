@@ -8,6 +8,7 @@ interface IProps {
   children: ReactNode;
 }
 
+jest.mock('@/widgets/Hobbies', () => () => <div />);
 jest.mock('@/shared/UI/TracingBeam', () => ({ children }: IProps) => (
   <div>{children}</div>
 ));

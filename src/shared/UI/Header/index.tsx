@@ -8,7 +8,7 @@ import styles from './styles/index.module.scss';
 
 interface IProps {
   text: string;
-  id: string;
+  id?: string;
   withoutBorder?: boolean;
   className?: string;
 }

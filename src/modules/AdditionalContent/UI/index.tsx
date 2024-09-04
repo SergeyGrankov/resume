@@ -1,14 +1,14 @@
 import React from 'react';
 
-import BoxContainer from '@/shared/UI/BoxContainer';
+import Hobbies from '@/widgets/Hobbies';
+import TracingBeam from '@/shared/UI/TracingBeam';
 
 export default function AdditionalContent() {
   return (
     <>
-      {/* TODO: убрать это */}
-      <BoxContainer>
-        <div>Hello, my name is Sergey!</div>
-      </BoxContainer>
+      <TracingBeam>
+        <Hobbies />
+      </TracingBeam>
     </>
   );
 }
