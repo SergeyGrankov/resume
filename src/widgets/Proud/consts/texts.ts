@@ -1,5 +1,5 @@
 export const texts: string[] = [
-  'Increased website performance by almost 2 times',
+  'Increased website performance',
   'Migrated the project to a new boilerplate and refactored complex logical blocks',
   'Improved user engagement metrics',
   'Participated in complex cross-team integrations',
