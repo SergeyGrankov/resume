@@ -63,8 +63,8 @@ export default function About() {
         <Image
           className={styles.photo}
           src="/widgets/AboutInfo/me.webp"
-          width={280}
-          height={280}
+          width={361}
+          height={270}
           alt="My image"
           loading="eager"
         />

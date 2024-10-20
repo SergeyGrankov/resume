@@ -10,7 +10,6 @@ export default function Anchorbar() {
   return (
     <Tabs
       sx={{
-        position: 'sticky',
         top: 0,
         zIndex: 2,
         borderBottom: `1px solid ${colors.SPACE_GRAY}`,
